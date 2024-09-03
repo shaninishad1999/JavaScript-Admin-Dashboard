@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="left-navbar">
+
+            <a href="#">My Dashboard</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <i class="fa-solid fa-bars" onclick="fun()"></i>
+        </div>
+
+        <div class="right-navbar" id="right-navbar">
+
+            <label for="search"></label>
+            <input type="text" name="search" id="search" placeholder="search">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            &nbsp;&nbsp;&nbsp;
+
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+
+
+            <div class="dropdown">
+                <button class="dropbtn"> <i class="fa-solid fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="head-section">
+
+
+        <aside class="sidebar-section" id="sidebar">
+
+            <div class="sidebar" >
+
+                <a href="#" onclick="dashboard()"><span
+                        class="material-symbols-outlined">grid_view</span>&nbsp;Dashboard</a>
+                <a href="#" onclick="showTable()"><span class="material-symbols-outlined">table </span>&nbsp;Table</a>
+                <a href="#" onclick="insertTable()"><span
+                        class="material-symbols-outlined">arrow_insert</span>&nbsp;Insert</a>
+                <a href="#" onclick="update()"><span
+                        class="material-symbols-outlined">arrow_insert</span>&nbsp;Update</a>
+                <a href="/login/index.html"><span class="material-symbols-outlined">login</span>&nbsp;Login</a>
+                <a href="/sign-up/index.html"><span class="material-symbols-outlined">logout</span>&nbsp;Sign-Up</a>
+                <a href="/login/index.html" id="logout"><span class="material-symbols-outlined">logout</span>&nbsp;Logout</a>
+            </div>
+
+        </aside>
+
+
+    <section id="dashboard">
+        <div class="dashboard-container">
+            <div class="dashboard-box">
+                <div class="dashboard-content">
+
+                    <h1>Total Employee</h1><br>
+                    <p>4050</p>
+                </div>
+
+            </div>
+            <div class="dashboard-box">
+                <div class="dashboard-content">
+
+                    <h1>Monthly Employee</h1><br>
+                    <p>1050</p>
+                </div>
+            </div>
+            <div class="dashboard-box">
+                <div class="dashboard-content">
+
+                    <h1>Weekly Employee</h1><br>
+                    <p>450</p>
+                </div>
+            </div>
+            <div class="dashboard-box">
+                <div class="dashboard-content">
+
+                    <h1>Daily Employee</h1><br>
+                    <p>50</p>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard-element">
+            <p>Lorem ipsum, dolor sit amet excepturi! Ipsam Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Doloremque, velit?. Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            <p>Lorem ipsum, dolor sit amet excepturi! Ipsam Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Doloremque, velit?. Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            <p>Lorem ipsum, dolor sit amet excepturi! Ipsam Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Doloremque, velit?. Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            <p id="para">Welcome User</p>
+            <p>Lorem ipsum, dolor sit amet excepturi! Ipsam Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Doloremque, velit?. Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            <p>Lorem ipsum, dolor sit amet excepturi! Ipsam Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Doloremque, velit?. Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            <p>Lorem ipsum, dolor sit amet excepturi! Ipsam Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Doloremque, velit?. Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+        </div>
+
+    </section>
+
+    <!-- Update Table start -->
+    <!-- <div class="table-box" id="showTable">
+        
+    <table>
+        <thead>
+            <tr>
+                <th>Sr No</th>
+                <th>Profile</th>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Office Code</th>
+                <th>Job Title</th>
+            </tr>
+        </thead>
+        <tbody id="tableData">
+           
+    </table>
+</div> -->
+    <!-- update Table close -->
+
+
+    <!-- Update Table start -->
+
+
+    <div class="table-box" id="update-table">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Sr No</th>
+                    <th>Profile</th>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Office Code</th>
+                    <th>Job Title</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tableData">
+                <!-- Data will be dynamically injected here -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- update Table close -->
+
+
+
+    <!-- main section start -->
+
+    <main id="form">
+        <!-- Modal start -->
+        <div class="model">
+            <!-- <i class="fa fa-times-circle close-icon"></i> -->
+            <div class="left-model">
+                <div class="img-box">
+                    <img src="/logo.jpg" id="profile-pic" width="150px" height="150px" alt="Profile Picture">
+                   &nbsp;&nbsp;&nbsp;
+                    <div>
+                        <input type="file" id="upload-field">
+                    </div>
+                </div>
+            </div>
+            <div class="right-model">
+                <form id="registerForm">
+                    <div class="input-box">
+                        <label for="id">Id</label>
+                        <input type="text" id="id" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="Officecode">Office Code</label>
+                        <input type="text" id="Officecode" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="jobtitle">Job Title</label>
+                        <input type="text" id="jobtitle" required>
+                    </div>
+                    <div class="input-box">
+                        <button type="submit" id="register-btn">Register</button>
+                        <!-- <button type="button" id="update-btn" disabled style="background-color: red;">Update</button> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Modal close -->
+
+    </main>
+
+    <!-- main section close -->
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
