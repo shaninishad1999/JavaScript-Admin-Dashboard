@@ -50,19 +50,39 @@
 
         <aside class="sidebar-section" id="sidebar">
 
-            <div class="sidebar" >
+            <div class="sidebar">
 
-                <a href="#" onclick="dashboard()"><span
-                        class="material-symbols-outlined">grid_view</span>&nbsp;Dashboard</a>
-                <a href="#" onclick="showTable()"><span class="material-symbols-outlined">table </span>&nbsp;Table</a>
-                <a href="#" onclick="insertTable()"><span
-                        class="material-symbols-outlined">arrow_insert</span>&nbsp;Insert</a>
-                <a href="#" onclick="update()"><span
-                        class="material-symbols-outlined">arrow_insert</span>&nbsp;Update</a>
-                <a href="/login/index.html"><span class="material-symbols-outlined">login</span>&nbsp;Login</a>
-                <a href="/sign-up/index.html"><span class="material-symbols-outlined">logout</span>&nbsp;Sign-Up</a>
-                <a href="/login/index.html" id="logout"><span class="material-symbols-outlined">logout</span>&nbsp;Logout</a>
+                <div class="dashboard" onclick="dashboard()" style="cursor: pointer;">
+                    <span class="material-symbols-outlined">grid_view</span>&nbsp;Dashboard
+                </div>
+            
+                <div class="table" onclick="showTable()" style="cursor: pointer;">
+                    <span class="material-symbols-outlined">table</span>&nbsp;Table
+                </div>
+            
+                <div class="insert" onclick="insertTable()" style="cursor: pointer;">
+                    <span class="material-symbols-outlined">arrow_insert</span>&nbsp;Insert
+                </div>
+            
+                <div class="update" onclick="update()" style="cursor: pointer;">
+                    <span class="material-symbols-outlined">arrow_insert</span>&nbsp;Update
+                </div>
+            
+                <div class="login" onclick="window.location.href='/login/index.html'" style="cursor: pointer;">
+                    <span class="material-symbols-outlined">login</span>&nbsp;Login
+                </div>
+            
+                <div class="sign-up" onclick="window.location.href='/sign-up/index.html'" style="cursor: pointer;">
+                    <span class="material-symbols-outlined">logout</span>&nbsp;Sign-Up
+                </div>
+            
+                <div class="logout" id="logout" onclick="logout()" style="cursor: pointer;">
+                    <span class="material-symbols-outlined">logout</span>&nbsp;Logout
+                </div>
+            
             </div>
+            
+            
 
         </aside>
 

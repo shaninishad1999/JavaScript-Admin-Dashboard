@@ -47,5 +47,22 @@ function fun() {
 }
 
 
+// logout code 
+// Logout function
+function logout() {
+    var confirmLogout = confirm("Do you want to logout?");
+    if (confirmLogout) {
+   
+        window.location.href = "/login/index.html"; 
+        
+        window.onpageshow = function(event) {
+            if (event.persisted) {
+                window.location.reload();
+            }
+        };
+    }
+}
+
+
 
 

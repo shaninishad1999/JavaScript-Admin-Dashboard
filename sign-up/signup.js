@@ -10,7 +10,7 @@ function add(e) {
   let confirmpassword = document.getElementById("confirmPassword").value;
 
   if (
-    fname === "" ||
+    fname === "" || 
     email === "" || 
     mobile === "" || 
     password === "" ||
