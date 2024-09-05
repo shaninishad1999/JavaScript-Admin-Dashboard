@@ -5,8 +5,13 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.bg {
+  background: url("/11.png") no-repeat center center/cover;
+  height: 100vh;
+}
+
 .login {
-  margin: 30px;
+  padding: 100px;
 }
 
 .container {
@@ -23,6 +28,7 @@
   text-align: center;
   font-weight: normal;
   margin-bottom: 20px;
+  color: white;
 }
 
 input[type=text], select {
@@ -68,7 +74,7 @@ input[type=password], select {
   justify-content: space-around;
 }
 
-.form-btn a button {
+.form-btn button {
   width: 70%;
   padding: 10px 20px;
   margin-top: 20px;
@@ -81,7 +87,21 @@ input[type=password], select {
   margin-bottom: 20px;
 }
 
-.form-btn a button:hover {
-  background-color: blue;
+.form-btn button:hover {
+  background-color: rgb(46, 46, 179);
   color: white;
+}
+
+#click-here:hover {
+  color: blue;
+}
+
+.text {
+  color: white;
+  line-height: 2;
+}
+
+.link {
+  color: rgb(68, 68, 250);
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */

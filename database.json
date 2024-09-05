@@ -1,0 +1,37 @@
+{
+    "employees": [
+      {
+        "employeeId": 1,
+        "employeeFirstName": "John",
+        "employeeLastName": "Doe",
+        "employeeEmail": "john.doe@example.com",
+        "employeeOfficeCode": "A101",
+        "employeeJobTitle": "Manager"
+      },
+      {
+        "employeeId": 2,
+        "employeeFirstName": "Jane",
+        "employeeLastName": "Smith",
+        "employeeEmail": "jane.smith@example.com",
+        "employeeOfficeCode": "B202",
+        "employeeJobTitle": "Developer"
+      },
+      {
+        "employeeId": 3,
+        "employeeFirstName": "Michael",
+        "employeeLastName": "Johnson",
+        "employeeEmail": "michael.johnson@example.com",
+        "employeeOfficeCode": "C303",
+        "employeeJobTitle": "Designer"
+      },
+      {
+        "employeeId": 4,
+        "employeeFirstName": "Shani",
+        "employeeLastName": "Deval",
+        "employeeEmail": "shani.deval@example.com",
+        "employeeOfficeCode": "D404",
+        "employeeJobTitle": "Java Developer"
+      }
+    ]
+  }
+  
