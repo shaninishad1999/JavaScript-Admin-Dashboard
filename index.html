@@ -30,17 +30,21 @@
             <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
             &nbsp;&nbsp;&nbsp;
 
-            <a href="#"><i class="fa-solid fa-user"></i></a>
+           <i  class="fa-solid fa-user"></i>
 
-
+     
+            
             <div class="dropdown">
-                <button class="dropbtn"> <i class="fa-solid fa-caret-down"></i></button>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
+                <button class="dropbtn"> <i class="fa-solid fa-caret-down" onclick="toggleUserInfo()"></i></button>
+                <div  id="user-info" style="display: none;">
+                    <div class="dropdown-content">
+                        <li>UserName</li>
+                        <li>Setting</li>
+                        <li onclick="logout()">Logout</li>
+                    </div>
                 </div>
             </div>
+          
         </div>
 
     </nav>

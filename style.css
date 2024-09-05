@@ -468,4 +468,29 @@ main .main-section .box-content > p {
     padding: 10px 5px;
     font-size: 14px;
   }
+}
+#user-info {
+  position: absolute;
+  width: 150px;
+  background-color: black;
+  right: 0;
+}
+
+.dropdown-content {
+  position: absolute;
+  z-index: 15;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  line-height: 2;
+  border-radius: 10px;
+}
+
+.dropdown-content li {
+  list-style: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }/*# sourceMappingURL=style.css.map */

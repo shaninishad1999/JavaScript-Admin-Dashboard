@@ -79,6 +79,19 @@ function logout() {
 
 
 
+// user info 
+
+function toggleUserInfo() {
+    var userInfo = document.getElementById("user-info");
+    // Check the current display style and toggle it
+    if (userInfo.style.display === "none") {
+        userInfo.style.display = "block";
+    } else {
+        userInfo.style.display = "none";
+    }
+ 
+}
+
 
 
 
