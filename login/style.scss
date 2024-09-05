@@ -85,7 +85,7 @@ input[type=password],select{
     margin-bottom: 20px;
 }
 .form-btn  button:hover{
-    background-color: rgb(46, 46, 179);
+    background-color: red;
     color: white;
 }
 
@@ -100,7 +100,11 @@ input[type=password],select{
     line-height: 2.0;
 }
 .link{
-    color: rgb(68, 68, 250);
+    color: white;
     font-weight: bold;
+    font-weight: 600;
+}
+.link:hover{
+    color: red;
 }
 

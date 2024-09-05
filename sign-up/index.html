@@ -11,24 +11,23 @@
 
 <body>
 
-
     <section class="reg">
         <div class="container">
-            <form action="#">
-                <h1>Register</h1>
+            <form id="registrationForm">
+                <h1 style="color: white;">Register</h1>
                 <div class="fname">
                     <label for="fname"></label>
                     <input type="text" name="fname" id="fname" placeholder="Full Name">
                     <i class="fa-solid fa-user"></i>
                 </div>
                 <div class="email">
-                    <label for="email-2"></label>
+                    <label for="email"></label>
                     <input type="email" name="email" id="email" placeholder="Email">
                     <i class="fa-regular fa-envelope"></i>
                 </div>
                 <div class="mobile">
                     <label for="mobile"></label>
-                    <input type="tel" name="mobile" id="mobile" value="+91" placeholder="Mobile">
+                    <input type="tel" name="mobile" id="number" placeholder="Mobile">
                     <i class="fa-solid fa-phone"></i>
                 </div>
                 <div class="password">
@@ -41,27 +40,16 @@
                     <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password">
                     <i class="fa-solid fa-lock"></i>
                 </div>
-               
-                <!-- <div class="rem-pass">
-                    <label for="checkbox">
-                        <input type="checkbox" name="charset" id="checkbox">
-                        Remember Me</label>
-                    <p><a href="#">Forget Password</a></p>
-
-                </div> -->
                 <div class="form-btn">
-                    <a href="#"><button id="btn">Register</button></a>
+                    <button type="submit" id="btn">Register</button>
                 </div>
-                <p>If you have an account <a href="/login/index.html">Login</a></p>
+                <p style="color: white;">If you have an account</p>
+                <p style="cursor: pointer;" onclick="refer()" class="new-user">Login</p>
             </form>
         </div>
     </section>
 
-
-
-<script src="/sign-up/signup.js"></script>
-
-    <!-- footer close -->
+    <script src="/sign-up/signup.js"></script>
 </body>
 
 </html>

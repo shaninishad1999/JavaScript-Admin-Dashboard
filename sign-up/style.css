@@ -6,7 +6,9 @@
 }
 
 .reg {
-  margin: 30px;
+  background: url("/22.png") no-repeat center/cover;
+  height: 100vh;
+  padding: 30px;
 }
 
 i {
@@ -106,7 +108,7 @@ select {
   justify-content: space-around;
 }
 
-.form-btn a button {
+.form-btn button {
   width: 70%;
   padding: 10px 20px;
   margin-top: 20px;
@@ -117,9 +119,26 @@ select {
   border-radius: 20px;
   cursor: pointer;
   margin-bottom: 20px;
+  color: black;
 }
 
-.form-btn a button:hover {
-  background-color: blue;
+.form-btn button:hover {
+  background-color: red;
   color: white;
+}
+
+#btn {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.new-user {
+  font-weight: bold;
+  color: white;
+  line-height: 2;
+  font-size: 20px;
+}
+
+.new-user:hover {
+  color: red;
 }/*# sourceMappingURL=style.css.map */
