@@ -1,37 +1,139 @@
 {
-    "employees": [
-      {
-        "employeeId": 1,
-        "employeeFirstName": "John",
-        "employeeLastName": "Doe",
-        "employeeEmail": "john.doe@example.com",
-        "employeeOfficeCode": "A101",
-        "employeeJobTitle": "Manager"
-      },
-      {
-        "employeeId": 2,
-        "employeeFirstName": "Jane",
-        "employeeLastName": "Smith",
-        "employeeEmail": "jane.smith@example.com",
-        "employeeOfficeCode": "B202",
-        "employeeJobTitle": "Developer"
-      },
-      {
-        "employeeId": 3,
-        "employeeFirstName": "Michael",
-        "employeeLastName": "Johnson",
-        "employeeEmail": "michael.johnson@example.com",
-        "employeeOfficeCode": "C303",
-        "employeeJobTitle": "Designer"
-      },
-      {
-        "employeeId": 4,
-        "employeeFirstName": "Shani",
-        "employeeLastName": "Deval",
-        "employeeEmail": "shani.deval@example.com",
-        "employeeOfficeCode": "D404",
-        "employeeJobTitle": "Java Developer"
-      }
-    ]
-  }
-  
+  "employees": [
+    {
+      "employeeId": "101",
+      "fullName": "Alice Johnson",
+      "email": "alice.johnson@example.com",
+      "mobileNumber": "9876543210",
+      "officeCode": "A1B2",
+      "jobTitle": "Software Engineer",
+      "id": "e893"
+    },
+    {
+      "employeeId": "102",
+      "fullName": "Bob Smith",
+      "email": "bob.smith@example.com",
+      "mobileNumber": "9876543211",
+      "officeCode": "B2C3",
+      "jobTitle": "Project Manager",
+      "id": "8476"
+    },
+    {
+      "employeeId": "103",
+      "fullName": "Carol Davis",
+      "email": "carol.davis@example.com",
+      "mobileNumber": "9876543212",
+      "officeCode": "C3D4",
+      "jobTitle": "UX Designer",
+      "id": "a316"
+    },
+    {
+      "employeeId": "104",
+      "fullName": "David Brown",
+      "email": "david.brown@example.com",
+      "mobileNumber": "9876543213",
+      "officeCode": "D4E5",
+      "jobTitle": "Data Analyst",
+      "id": "57dc"
+    },
+    {
+      "employeeId": "105",
+      "fullName": "Eve Miller",
+      "email": "eve.miller@example.com",
+      "mobileNumber": "9876543214",
+      "officeCode": "E5F6",
+      "jobTitle": "DevOps Engineer",
+      "id": "8c44"
+    },
+    {
+      "id": "d788",
+      "employeeId": "123",
+      "fullName": "Shani",
+      "email": "shaninishad1999@gmail.com",
+      "mobileNumber": "7896548759",
+      "officeCode": "145",
+      "jobTitle": "java"
+    },
+    {
+      "id": "46d1",
+      "employeeId": "",
+      "fullName": "",
+      "email": "",
+      "mobileNumber": "",
+      "officeCode": "",
+      "jobTitle": ""
+    },
+    {
+      "id": "79c0",
+      "employeeId": "",
+      "fullName": "",
+      "email": "",
+      "mobileNumber": "",
+      "officeCode": "",
+      "jobTitle": ""
+    },
+    {
+      "id": "070e",
+      "employeeId": "",
+      "fullName": "",
+      "email": "",
+      "mobileNumber": "",
+      "officeCode": "",
+      "jobTitle": ""
+    },
+    {
+      "id": "c114",
+      "employeeId": "",
+      "fullName": "",
+      "email": "",
+      "mobileNumber": "",
+      "officeCode": "",
+      "jobTitle": ""
+    },
+    {
+      "id": "cf77",
+      "employeeId": "",
+      "fullName": "",
+      "email": "",
+      "mobileNumber": "",
+      "officeCode": "",
+      "jobTitle": ""
+    },
+    {
+      "id": "8c20",
+      "employeeId": "",
+      "fullName": "",
+      "email": "",
+      "mobileNumber": "",
+      "officeCode": "",
+      "jobTitle": ""
+    },
+    {
+      "id": "4597",
+      "employeeId": "",
+      "fullName": "",
+      "email": "",
+      "mobileNumber": "",
+      "officeCode": "",
+      "jobTitle": ""
+    },
+    {
+      "id": "5a5a",
+      "employeeId": "",
+      "fullName": "",
+      "email": "",
+      "mobileNumber": "",
+      "officeCode": "",
+      "jobTitle": ""
+    },
+    {
+      "id": "228d",
+      "employeeId": "",
+      "fullName": "",
+      "email": "",
+      "mobileNumber": "",
+      "officeCode": "",
+      "jobTitle": ""
+    }
+  ]
+}
