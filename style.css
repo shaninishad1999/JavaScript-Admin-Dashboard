@@ -280,6 +280,16 @@ main .main-section .box-content > p {
   background-color: #0056b3;
 }
 
+#demo {
+  padding: 40px;
+  align-items: center;
+}
+
+#show {
+  padding: 50px;
+  align-items: center;
+}
+
 /* Example media query for responsiveness */
 /* Media Query for Tablets (up to 768px wide) */
 @media (max-width: 768px) {

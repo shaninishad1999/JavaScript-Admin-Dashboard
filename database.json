@@ -6,7 +6,7 @@
       "email": "alice.johnson@example.com",
       "mobileNumber": "9876543210",
       "officeCode": "A1B2",
-      "jobTitle": "Software Engineer",
+      "jobTitle": "Java",
       "id": "e893"
     },
     {
@@ -26,114 +26,6 @@
       "officeCode": "C3D4",
       "jobTitle": "UX Designer",
       "id": "a316"
-    },
-    {
-      "employeeId": "104",
-      "fullName": "David Brown",
-      "email": "david.brown@example.com",
-      "mobileNumber": "9876543213",
-      "officeCode": "D4E5",
-      "jobTitle": "Data Analyst",
-      "id": "57dc"
-    },
-    {
-      "employeeId": "105",
-      "fullName": "Eve Miller",
-      "email": "eve.miller@example.com",
-      "mobileNumber": "9876543214",
-      "officeCode": "E5F6",
-      "jobTitle": "DevOps Engineer",
-      "id": "8c44"
-    },
-    {
-      "id": "d788",
-      "employeeId": "123",
-      "fullName": "Shani",
-      "email": "shaninishad1999@gmail.com",
-      "mobileNumber": "7896548759",
-      "officeCode": "145",
-      "jobTitle": "java"
-    },
-    {
-      "id": "46d1",
-      "employeeId": "",
-      "fullName": "",
-      "email": "",
-      "mobileNumber": "",
-      "officeCode": "",
-      "jobTitle": ""
-    },
-    {
-      "id": "79c0",
-      "employeeId": "",
-      "fullName": "",
-      "email": "",
-      "mobileNumber": "",
-      "officeCode": "",
-      "jobTitle": ""
-    },
-    {
-      "id": "070e",
-      "employeeId": "",
-      "fullName": "",
-      "email": "",
-      "mobileNumber": "",
-      "officeCode": "",
-      "jobTitle": ""
-    },
-    {
-      "id": "c114",
-      "employeeId": "",
-      "fullName": "",
-      "email": "",
-      "mobileNumber": "",
-      "officeCode": "",
-      "jobTitle": ""
-    },
-    {
-      "id": "cf77",
-      "employeeId": "",
-      "fullName": "",
-      "email": "",
-      "mobileNumber": "",
-      "officeCode": "",
-      "jobTitle": ""
-    },
-    {
-      "id": "8c20",
-      "employeeId": "",
-      "fullName": "",
-      "email": "",
-      "mobileNumber": "",
-      "officeCode": "",
-      "jobTitle": ""
-    },
-    {
-      "id": "4597",
-      "employeeId": "",
-      "fullName": "",
-      "email": "",
-      "mobileNumber": "",
-      "officeCode": "",
-      "jobTitle": ""
-    },
-    {
-      "id": "5a5a",
-      "employeeId": "",
-      "fullName": "",
-      "email": "",
-      "mobileNumber": "",
-      "officeCode": "",
-      "jobTitle": ""
-    },
-    {
-      "id": "228d",
-      "employeeId": "",
-      "fullName": "",
-      "email": "",
-      "mobileNumber": "",
-      "officeCode": "",
-      "jobTitle": ""
     }
   ]
 }

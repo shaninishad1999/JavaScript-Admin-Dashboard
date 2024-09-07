@@ -38,7 +38,7 @@
                 <button class="dropbtn"> <i class="fa-solid fa-caret-down" onclick="toggleUserInfo()"></i></button>
                 <div id="user-info" style="display: none;">
                     <div class="dropdown-content">
-                        <li>UserName</li>
+                        <li id="changeUserId">UserName</li>
                         <li>Setting</li>
                         <li onclick="logout()">Logout</li>
                     </div>
@@ -79,9 +79,9 @@
                     <span class="material-symbols-outlined">logout</span>&nbsp;Sign-Up
                 </div>
 
-                <div class="logout" id="logout" onclick="logout()" style="cursor: pointer;">
+                <!-- <div class="logout" id="logout" onclick="logout()" style="cursor: pointer;">
                     <span class="material-symbols-outlined">logout</span>&nbsp;Logout
-                </div>
+                </div> -->
 
             </div>
 
@@ -147,52 +147,15 @@
         </div>
         <!-- dashboard close -->
 
-        <!--  dashboard start 2 -->
+        <!-- show table -->
         <div id="show-table">
-            <div class="dashboard-container">
-                <div class="dashboard-box">
-                    <div class="dashboard-content">
-
-                        <h1>Total Employee</h1><br>
-                        <p>4050</p>
-                    </div>
-
-                </div>
-                <div class="dashboard-box">
-                    <div class="dashboard-content">
-
-                        <h1>Monthly Employee</h1><br>
-                        <p>1050</p>
-                    </div>
-                </div>
-                <div class="dashboard-box">
-                    <div class="dashboard-content">
-
-                        <h1>Weekly Employee</h1><br>
-                        <p>450</p>
-                    </div>
-                </div>
-                <div class="dashboard-box">
-                    <div class="dashboard-content">
-
-                        <h1>Daily Employee</h1><br>
-                        <p>50</p>
-                    </div>
-                </div>
-            </div>
-            <div class="dashboard-element">
-
-                <p>Lorem ipsum, dolor sit amet excepturi! Ipsam Lorem ipsum dolor, sit amet consectetur adipisicing
-                    elit.
-                    Doloremque, velit?. Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                <p id="para">Welcome User</p>
-
-            </div>
+            
+            <h1 id="show"></h1> 
 
         </div>
-        <!-- dashboard close 2-->
+        <!-- show table close-->
 
-        <!--  dashboard start 3 -->
+        <!--  form start -->
         <div id="form">
             <div class="form-section form">
 
@@ -239,64 +202,15 @@
 
         </div>
 
-        <!-- dashboard close 3-->
-        <!--  dashboard start 4 -->
+        <!-- form close -->
+
+        <!--  update table start-->
         <div id="update-table">
-            <div class="dashboard-container">
-                <div class="dashboard-box">
-                    <div class="dashboard-content">
+            <h1 id="demo"></h1>
 
-                        <h1>Total Employee</h1><br>
-                        <p>4050</p>
-                    </div>
-
-                </div>
-                <div class="dashboard-box">
-                    <div class="dashboard-content">
-
-                        <h1>Monthly Employee</h1><br>
-                        <p>1050</p>
-                    </div>
-                </div>
-                <div class="dashboard-box">
-                    <div class="dashboard-content">
-
-                        <h1>Weekly Employee</h1><br>
-                        <p>450</p>
-                    </div>
-                </div>
-                <div class="dashboard-box">
-                    <div class="dashboard-content">
-
-                        <h1>Daily Employee</h1><br>
-                        <p>50</p>
-                    </div>
-                </div>
-            </div>
-            <div class="dashboard-element">
-                <p>Lorem ipsum, dolor sit amet excepturi! Ipsam Lorem ipsum dolor, sit amet consectetur adipisicing
-                    elit.
-                    Doloremque, velit?. Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                <p>Lorem ipsum, dolor sit amet excepturi! Ipsam Lorem ipsum dolor, sit amet consectetur adipisicing
-                    elit.
-                    Doloremque, velit?. Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                <p>Lorem ipsum, dolor sit amet excepturi! Ipsam Lorem ipsum dolor, sit amet consectetur adipisicing
-                    elit.
-                    Doloremque, velit?. Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                <p id="para">Welcome User</p>
-                <p>Lorem ipsum, dolor sit amet excepturi! Ipsam Lorem ipsum dolor, sit amet consectetur adipisicing
-                    elit.
-                    Doloremque, velit?. Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                <p>Lorem ipsum, dolor sit amet excepturi! Ipsam Lorem ipsum dolor, sit amet consectetur adipisicing
-                    elit.
-                    Doloremque, velit?. Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                <p>Lorem ipsum, dolor sit amet excepturi! Ipsam Lorem ipsum dolor, sit amet consectetur adipisicing
-                    elit.
-                    Doloremque, velit?. Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-            </div>
 
         </div>
-        <!-- dashboard close 4-->
+        <!-- update table close-->
 
 
     </div>
@@ -306,6 +220,8 @@
 
     <script src="index.js"></script>
     <script src="/insert.js"></script>
+    <script src="/update.js"></script>
+    <script src="/display.js"></script>
 </body>
 
 </html>
