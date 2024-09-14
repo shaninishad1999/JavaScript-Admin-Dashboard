@@ -14,7 +14,6 @@ function display(e) {
     console.log(storedEmail);
     console.log(storedPassword);
 
-    // Input validation
     if (email === "") {
         document.getElementById("email").focus();
         alert("Email is required.");
@@ -26,22 +25,6 @@ function display(e) {
     }
 
    
-    // if (email === storedEmail && password === storedPassword) {
-    //     alert(`Login successful, welcome ${storedEmail}`);
-        
-       
-    //     const userIdElement = document.getElementById("changeUserId");
-    //     if (userIdElement) {
-    //         userIdElement.innerHTML = storedEmail;
-    //     } else {
-    //         console.error("Element with ID 'changeUserId' not found.");
-    //     }
-
-    //     // Redirect to a different page
-    //     window.location.href = "/index.html";
-    // } else {
-    //     alert("Incorrect email or password.");
-    // }
 
     if (email === storedEmail && password === storedPassword) {
         alert(`Login successful, welcome ${storedEmail}`);
@@ -56,7 +39,7 @@ function display(e) {
 
 
 
-// Redirect to the signup page function
+
 function clickHere() {
     window.location.href = '/sign-up/index.html';
 }

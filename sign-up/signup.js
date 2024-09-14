@@ -7,42 +7,41 @@ document.getElementById("registrationForm").addEventListener("submit", function(
   let password = document.getElementById("password").value;
   let confirmPassword = document.getElementById("confirmPassword").value;
 
-  // Validate first name
+  
   if (fname === "") {
       alert("Please fill  Full Name");
       document.getElementById("fname").focus();
       return;
   }
 
-  // Validate email
+
   if (!email.includes('@') || !email.includes('.')) {
       alert("Please enter a valid email address.");
       document.getElementById('email').focus();
       return;
   }
 
-  // Validate phone number
   if (isNaN(number) || number === "" || number.length !== 10) {
       alert("Please enter a valid 10-digit number");
       document.getElementById('number').focus();
       return;
   }
 
-  // Validate password
+
   if (!password.match(/[!@#$%^&*()]/)) { 
       alert("Password must contain at least one special character.");
       document.getElementById('password').focus();
       return;
   }
 
-  // Validate password confirmation
+
   if (password !== confirmPassword) {
       alert("Passwords do not match.");
       document.getElementById('confirmPassword').focus();
       return;
   }
 
-  // If all validations pass, store data in localStorage
+
   localStorage.setItem("fname", fname);
   localStorage.setItem("email", email);
   localStorage.setItem("mobile", number);

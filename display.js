@@ -1,5 +1,5 @@
 async function dataShow() {
-    // Create the table structure with headers, including the new 'Department' column and separate columns for Edit and Delete
+
     let mytable = `
        <table style="border-collapse: collapse; width: 90%; text-align: left; font-size: 20px; margin: 0 auto;"> <!-- Center-align the table with margin -->
          <tr>
@@ -14,13 +14,13 @@ async function dataShow() {
         </tr>
       `;
 
-    let url = "http://localhost:3000/employees"; // API URL
+    let url = "http://localhost:3000/employees";
 
     try {
-      let myobj = await fetch(url); // Fetch the data
-      let mydata = await myobj.json(); // Parse the JSON response
+      let myobj = await fetch(url); 
+      let mydata = await myobj.json(); 
 
-      // Loop through the data and generate table rows
+      
       mydata.map((employee) => {
         mytable += `
           <tr>
@@ -36,15 +36,15 @@ async function dataShow() {
         `;
       });
 
-      mytable += `</table>`; // Close the table
+      mytable += `</table>`; 
 
-      // Display the table in the "demo" element
+     
       document.getElementById("show").innerHTML = mytable;
 
     } catch (error) {
-      console.error("Error fetching data:", error); // Log any errors
+      console.error("Error fetching data:", error); 
     }
 }
 
-// Call the function to display the data
+
 dataShow();
