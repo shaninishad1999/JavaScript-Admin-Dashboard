@@ -23,7 +23,6 @@
             <i class="fa-solid fa-bars" onclick="fun()"></i>
         </div>
 
-        <!-- rigth navbar start -->
         <div class="right-navbar" id="right-navbar">
 
             <label for="search"></label>
@@ -34,8 +33,8 @@
             <i class="fa-solid fa-user"></i>
 
 
-            <!-- dropdown start -->
-            <div class="dropdown">
+              <!-- dropdown start -->
+              <div class="dropdown">
                 <button class="dropbtn"> <i class="fa-solid fa-caret-down" onclick="toggleUserInfo()"></i></button>
                 <div id="user-info" style="display: none;">
                     <div class="dropdown-content">
@@ -49,7 +48,6 @@
             <!-- drowpdown close -->
 
         </div>
-        <!-- right navebar close -->
 
     </nav>
 
@@ -64,15 +62,15 @@
                 </div>
 
                 <div class="table" onclick="window.location.href='/showTable.html'" style="cursor: pointer;">
-                    <span class="material-symbols-outlined">table</span>&nbsp;Show Table
+                    <span class="material-symbols-outlined">table</span>&nbsp;Table
                 </div>
 
                 <div class="insert" onclick="window.location.href='/insert.html'" style="cursor: pointer;">
-                    <span class="material-symbols-outlined">arrow_insert</span>&nbsp;Insert Data
+                    <span class="material-symbols-outlined">arrow_insert</span>&nbsp;Insert
                 </div>
 
                 <div class="update" onclick="window.location.href='/update.html'" style="cursor: pointer;">
-                    <span class="material-symbols-outlined">arrow_insert</span>&nbsp;Update Data
+                    <span class="material-symbols-outlined">arrow_insert</span>&nbsp;Update
                 </div>
 
                 <div class="login" onclick="window.location.href='/login/index.html'" style="cursor: pointer;">
@@ -87,77 +85,25 @@
 
             </div>
 
-
-
         </aside>
 
-        <!--  dashboard start  -->
-        <div id="dashboard">
-            <div class="dashboard-container">
-                <div class="dashboard-box">
-                    <div class="dashboard-content">
+        <!--  update table start-->
+        <div id="update-table">
+            <h1 id="demo"></h1>
 
-                        <h1>Total Employee</h1><br>
-                        <p id="count">0</p>
-                    </div>
-
-                </div>
-                <div class="dashboard-box">
-                    <div class="dashboard-content">
-
-                        <h1>Monthly Employee</h1><br>
-                        <p >1050</p>
-                    </div>
-                </div>
-                <div class="dashboard-box">
-                    <div class="dashboard-content">
-
-                        <h1>Weekly Employee</h1><br>
-                        <p>450</p>
-                    </div>
-                </div>
-                <div class="dashboard-box">
-                    <div class="dashboard-content">
-
-                        <h1>Daily Employee</h1><br>
-                        <p>50</p>
-                    </div>
-                </div>
-            </div>
-            <div class="dashboard-element">
-                <p>Lorem ipsum, dolor sit amet excepturi! Ipsam Lorem ipsum dolor, sit amet consectetur adipisicing
-                    elit.
-                    Doloremque, velit?. Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                <p>Lorem ipsum, dolor sit amet excepturi! Ipsam Lorem ipsum dolor, sit amet consectetur adipisicing
-                    elit.
-                    Doloremque, velit?. Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                <p>Lorem ipsum, dolor sit amet excepturi! Ipsam Lorem ipsum dolor, sit amet consectetur adipisicing
-                    elit.
-                    Doloremque, velit?. Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                <p id="para">Welcome User</p>
-                <p>Lorem ipsum, dolor sit amet excepturi! Ipsam Lorem ipsum dolor, sit amet consectetur adipisicing
-                    elit.
-                    Doloremque, velit?. Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                <p>Lorem ipsum, dolor sit amet excepturi! Ipsam Lorem ipsum dolor, sit amet consectetur adipisicing
-                    elit.
-                    Doloremque, velit?. Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                <p>Lorem ipsum, dolor sit amet excepturi! Ipsam Lorem ipsum dolor, sit amet consectetur adipisicing
-                    elit.
-                    Doloremque, velit?. Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-            </div>
 
         </div>
-        <!-- dashboard close -->
+        <!-- update table close-->
 
 
     </div>
     <!-- main section close -->
 
-
-
+  
+    <script src="/update.js"></script>
     <script src="index.js"></script>
-    <!-- <script src="/login/login.js"></script> -->
-
+    
+   
 <script>
     window.onload = function() {
     const storedEmail = localStorage.getItem("userEmail");
@@ -172,8 +118,6 @@
 };
 
 </script>
-   
-
 </body>
 
 </html>

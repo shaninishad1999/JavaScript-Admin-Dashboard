@@ -202,7 +202,7 @@ main .main-section .box-content > p {
 }
 #user-info {
   position: absolute;
-  width: 150px;
+  width: 200px;
   background-color: black;
   right: 0;
 }
@@ -227,13 +227,13 @@ main .main-section .box-content > p {
 }
 
 #form {
-  padding-top: 80px;
+  padding-top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 92vh;
   background-color: #f5f5f5;
-  width: 100%;
+  width: 87%;
 }
 #form .form-section {
   display: flex;
@@ -278,6 +278,19 @@ main .main-section .box-content > p {
 }
 #form #form-btn:hover {
   background-color: #0056b3;
+}
+
+#submit-btn {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 25px;
+  font-size: 20px;
+  border: none;
+  background-color: #0056b3;
+  color: white;
+  cursor: pointer;
 }
 
 #demo {

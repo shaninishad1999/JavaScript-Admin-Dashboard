@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="left-navbar">
+
+            <a href="#">My Dashboard</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="fa-solid fa-bars" onclick="fun()"></i>
+        </div>
+
+        <div class="right-navbar" id="right-navbar">
+
+            <label for="search"></label>
+            <input type="text" name="search" id="search" placeholder="search">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            &nbsp;&nbsp;&nbsp;
+
+            <i class="fa-solid fa-user"></i>
+
+
+            <!-- dropdown start -->
+            <div class="dropdown">
+                <button class="dropbtn"> <i class="fa-solid fa-caret-down" onclick="toggleUserInfo()"></i></button>
+                <div id="user-info" style="display: none;">
+                    <div class="dropdown-content">
+                        <li id="changeUserId">UserName</li>
+                        <li>Setting</li>
+                        <li onclick="logout()">Logout</li>
+                    </div>
+                </div>
+            </div>
+
+            <!-- drowpdown close -->
+
+        </div>
+
+    </nav>
+
+    <div class="head-section">
+
+        <aside class="sidebar-section" id="sidebar">
+
+            <div class="sidebar">
+
+                <div class="dashboard" onclick="window.location.href='/index.html'" style="cursor: pointer;">
+                    <span class="material-symbols-outlined">grid_view</span>&nbsp;Dashboard
+                </div>
+
+                <div class="table" onclick="window.location.href='/showTable.html'" style="cursor: pointer;">
+                    <span class="material-symbols-outlined">table</span>&nbsp;Table
+                </div>
+
+                <div class="insert" onclick="window.location.href='/insert.html'" style="cursor: pointer;">
+                    <span class="material-symbols-outlined">arrow_insert</span>&nbsp;Insert
+                </div>
+
+                <div class="update" onclick="window.location.href='/update.html'" style="cursor: pointer;">
+                    <span class="material-symbols-outlined">arrow_insert</span>&nbsp;Update
+                </div>
+
+                <div class="login" onclick="window.location.href='/login/index.html'" style="cursor: pointer;">
+                    <span class="material-symbols-outlined">login</span>&nbsp;Login
+                </div>
+
+                <div class="sign-up" onclick="window.location.href='/sign-up/index.html'" style="cursor: pointer;">
+                    <span class="material-symbols-outlined">logout</span>&nbsp;Sign-Up
+                </div>
+
+
+            </div>
+
+
+        </aside>
+
+
+        <!--  form start -->
+        <div id="form">
+            <div class="form-section form">
+
+                <form action="#" onsubmit="return saveData()">
+                    <div class="input-box">
+
+                        <label for="id">ID</label>
+                        <input type="text" name="" id="id"> <br>
+                    </div>
+                    <div class="input-box">
+
+                        <label for="fullName">FULL NAME</label>
+                        <input type="text" name="" id="fullName"> <br>
+                    </div>
+                    <div class="input-box">
+
+                        <label for="email">EMAIL</label>
+                        <input type="text" name="" id="email"> <br>
+                    </div>
+                    <div class="input-box">
+
+                        <label for="mobileNumber">MOBILE NUMBER</label>
+                        <input type="text" name="" id="mobileNumber"> <br>
+                    </div>
+                    <div class="input-box">
+
+                        <label for="officeCode">OFFICE CODE</label>
+                        <input type="text" name="" id="officeCode"> <br>
+                    </div>
+                    <div class="input-box">
+
+                        <label for="jobTitle">JOB TITLE</label>
+                        <input type="text" name="" id="jobTitle"> <br>
+                    </div>
+                    <div class="input-box">
+
+
+                        <label for="form-btn"></label>
+                        <button id="submit-btn">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+        <!-- form close -->
+
+    </div>
+    <!-- main section close -->
+
+    <script src="/insert.js"></script>
+    <script>
+        function toggleUserInfo() {
+            var userInfo = document.getElementById("user-info");
+            // Check the current display style and toggle it
+            if (userInfo.style.display === "none") {
+                userInfo.style.display = "block";
+            } else {
+                userInfo.style.display = "none";
+            }
+
+        }
+
+        // Logout function
+        function logout() {
+            var confirmLogout = confirm("Do you want to logout?");
+            if (confirmLogout) {
+
+                window.location.href = "/login/index.html";
+
+                window.onpageshow = function (event) {
+                    if (event.persisted) {
+                        window.location.reload();
+                    }
+                };
+            }
+        }
+
+        // user check
+        window.onload = function () {
+            const storedEmail = localStorage.getItem("userEmail");
+            if (storedEmail) {
+                const userIdElement = document.getElementById("changeUserId");
+                if (userIdElement) {
+                    userIdElement.innerHTML = storedEmail;
+                } else {
+                    console.error("Element with ID 'changeUserId' not found.");
+                }
+            }
+        };
+
+
+    </script>
+
+</body>
+
+</html>

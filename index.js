@@ -5,13 +5,13 @@ document.addEventListener("DOMContentLoaded", function() {
     var insert = document.getElementById("form");
     var updateTable = document.getElementById("update-table");
     
-    // Initial state
+ 
     insert.style.display = "none";
     updateTable.style.display = "none";
     showTableList.style.display = "none";
     showdashboard.style.display = "block";
     
-    // Functions to control visibility
+
     function insertTable() {
         showdashboard.style.display = "none";
         insert.style.display = "block";
@@ -51,17 +51,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 function fun() {
-    let sidebar = document.getElementById("sidebar");  // Get the sidebar element
+    let sidebar = document.getElementById("sidebar"); 
 
     if (sidebar.style.display === "none" || sidebar.style.display === "") {
-        sidebar.style.display = "block";  // Show the sidebar
+        sidebar.style.display = "block";  
     } else {
-        sidebar.style.display = "none";  // Hide the sidebar
+        sidebar.style.display = "none";  
     }
 }
 
 
-// logout code 
 // Logout function
 function logout() {
     var confirmLogout = confirm("Do you want to logout?");

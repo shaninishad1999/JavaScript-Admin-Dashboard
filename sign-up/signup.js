@@ -29,7 +29,7 @@ document.getElementById("registrationForm").addEventListener("submit", function(
   }
 
   // Validate password
-  if (!password.match(/[!@#$%^&*()]/)) {  // Check for special characters
+  if (!password.match(/[!@#$%^&*()]/)) { 
       alert("Password must contain at least one special character.");
       document.getElementById('password').focus();
       return;
