@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // Function to handle form data submission
 async function saveData() {
     try {
-
+        
         let employeeId = document.getElementById("id").value;
         let employeeFullName = document.getElementById("fullName").value;
         let employeeEmail = document.getElementById("email").value;
