@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Select elements
+
     var showdashboard = document.getElementById("dashboard");
     var showTableList = document.getElementById("show-table");
     var insert = document.getElementById("form");
