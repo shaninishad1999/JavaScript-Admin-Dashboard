@@ -76,7 +76,7 @@ async function dataShow() {
              <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Mobile Number</th>
              <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Office Code</th>
              <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Job Title</th>
-             <th style="border: 1px solid #ddd; padding: 8px; text-align: left; background-color: #f8f9fa; border-left: 2px solid #ddd;">Actions</th>
+             <th style="border: 1px solid #ddd; padding: 8px; text-align: left; background-color: #f8f9fa; border-left: 2px solid #ddd; border-right: 1px solid #ddd;">Actions</th>
           </tr>
       `;
   
@@ -103,7 +103,7 @@ async function dataShow() {
     });
   
     mytable += `</table>`;
-    document.getElementById("demo").innerHTML = mytable;
+    document.getElementById("updateTable").innerHTML = mytable;
 }
 
 dataShow();

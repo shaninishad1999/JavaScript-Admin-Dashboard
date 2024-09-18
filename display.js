@@ -8,7 +8,7 @@ async function dataShow() {
            <th style="border-left: 1px solid #ddd; padding: 8px;">Email</th>
            <th style="border-left: 1px solid #ddd; padding: 8px;">Mobile Number</th>
            <th style="border-left: 1px solid #ddd; padding: 8px;">Office Code</th>
-           <th style="border-left: 1px solid #ddd; padding: 8px;">Job Title</th>
+           <th style="border-left: 1px solid #ddd; border-right: 1px solid #ddd; padding: 8px;">Job Title</th>
 
        
         </tr>
@@ -24,7 +24,7 @@ async function dataShow() {
       mydata.map((employee) => {
         mytable += `
           <tr>
-            <td style="border: 1px solid #ddd; padding: 8px;"><input type="text" value="${employee.employeeId}" id="id-${employee.employeeId}" style="border: none; width: 100%;" readonly></td> <!-- Removed border from input -->
+            <td style="border: 1px solid #ddd; padding: 8px;"><input type="text" value="${employee.employeeId}" id="id-${employee.employeeId}" style="border: none; width: 100%;"  readonly></td> <!-- Removed border from input -->
             <td style="border: 1px solid #ddd; padding: 8px;"><input type="text" value="${employee.fullName}" id="name-${employee.employeeId}" style="border: none; width: 100%;" readonly></td>
             <td style="border: 1px solid #ddd; padding: 8px;"><input type="text" value="${employee.email}" id="email-${employee.employeeId}" style="border: none; width: 100%;" readonly></td>
             <td style="border: 1px solid #ddd; padding: 8px;"><input type="text" value="${employee.mobileNumber}" id="mobile-${employee.employeeId}" style="border: none; width: 100%;" readonly></td>

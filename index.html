@@ -20,16 +20,19 @@
         <div class="left-navbar">
 
             <a href="#">Admin Dashboard</a>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
             <i class="fa-solid fa-bars" onclick="fun()"></i>
         </div>
 
         <!-- rigth navbar start -->
         <div class="right-navbar" id="right-navbar">
 
-            <label for="search">
+            <label for="search" >
+
                 <input type="text" name="search" id="search" placeholder="search">
                 <i class="fa-solid fa-magnifying-glass"></i>
+
+            </label>
                 &nbsp;&nbsp;&nbsp;
 
                 <i class="fa-solid fa-user"></i>
@@ -126,25 +129,13 @@
                 </div>
             </div>
             <div class="dashboard-element">
-                <p>Lorem ipsum, dolor sit amet excepturi! Ipsam Lorem ipsum dolor, sit amet consectetur adipisicing
-                    elit.
-                    Doloremque, velit?. Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                <p>Lorem ipsum, dolor sit amet excepturi! Ipsam Lorem ipsum dolor, sit amet consectetur adipisicing
-                    elit.
-                    Doloremque, velit?. Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                <p>Lorem ipsum, dolor sit amet excepturi! Ipsam Lorem ipsum dolor, sit amet consectetur adipisicing
-                    elit.
-                    Doloremque, velit?. Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                <p id="para">Welcome User</p>
-                <p>Lorem ipsum, dolor sit amet excepturi! Ipsam Lorem ipsum dolor, sit amet consectetur adipisicing
-                    elit.
-                    Doloremque, velit?. Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                <p>Lorem ipsum, dolor sit amet excepturi! Ipsam Lorem ipsum dolor, sit amet consectetur adipisicing
-                    elit.
-                    Doloremque, velit?. Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                <p>Lorem ipsum, dolor sit amet excepturi! Ipsam Lorem ipsum dolor, sit amet consectetur adipisicing
-                    elit.
-                    Doloremque, velit?. Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                <p  style="font-size: 20px;">An admin responsible for managing employee data oversees the accurate collection, organization, and updating of employee records. <br>
+                     They ensure that sensitive information is securely stored and easily accessible when needed. The admin handles tasks such as maintaining <br> attendance,
+                     performance reviews,and payroll data. Additionally, they support compliance with HR policies and data privacy regulations.</p>
+                <p id="para" >Welcome  </p>
+                <!-- <span id="changeUser">UserId</span> -->
+                
+                
             </div>
 
         </div>
@@ -162,6 +153,7 @@
     <script>
         window.onload = function () {
             const storedEmail = localStorage.getItem("userEmail");
+           
             if (storedEmail) {
                 const userIdElement = document.getElementById("changeUserId");
                 if (userIdElement) {
@@ -176,7 +168,8 @@
         // localStorage.clear();
     </script>
 
-<script src="/index.js"></script>
+
+    <script src="/index.js"></script>
 </body>
 
 </html>
