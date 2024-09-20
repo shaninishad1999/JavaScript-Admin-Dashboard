@@ -334,26 +334,25 @@ main .main-section .box-content {
 
 // update table close
 
-
 @media (max-width: 1200px) {
   #update-table {
-    padding: 15px; 
+    padding: 15px;
   }
 
   table {
-    font-size: 0.9em; 
-    width: 100%; 
-    border-collapse: collapse; 
+    font-size: 0.9em;
+    width: 100%;
+    border-collapse: collapse;
     overflow-x: auto;
-    display: block; 
-    white-space: nowrap; 
+    display: block;
+    white-space: nowrap;
   }
 
   th,
   td {
-    padding: 8px; 
-    text-align: left; 
-    border: 1px solid #ddd; 
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
   }
 
   th {
@@ -361,30 +360,30 @@ main .main-section .box-content {
   }
 
   .head-section {
-    display: block; 
-    flex-direction: row; 
+    display: block;
+    flex-direction: row;
   }
 
   #sidebar {
-    display: none; 
+    display: none;
   }
 
   .dashboard-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    margin: 20px 20px; 
-    gap: 15px; 
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px 20px;
+    gap: 15px;
   }
 
   .dashboard-box {
-    height: 140px; 
-    width: 100%; 
-    margin: 5px; 
-    border-radius: 12px; 
+    height: 140px;
+    width: 100%;
+    margin: 5px;
+    border-radius: 12px;
   }
 
   .dashboard-element {
-    padding-left: 15px; 
+    padding-left: 15px;
     padding-right: 15px;
     line-height: 1.8;
   }
@@ -392,30 +391,28 @@ main .main-section .box-content {
   .sidebar-section {
     position: absolute;
     z-index: 15;
-    width: 180px; 
+    width: 180px;
     height: 92vh;
-    background-color: #1180f0; 
-    padding-left: 15px; 
-  
+    background-color: #1180f0;
+    padding-left: 15px;
+
     a {
       text-decoration: none;
       color: white;
-      font-size: 18px; 
+      font-size: 18px;
     }
   }
 
   .sidebar {
-    padding-top: 40px; 
+    padding-top: 40px;
     display: flex;
     flex-direction: column;
     align-content: center;
-    line-height: 2.5; 
+    line-height: 2.5;
     position: relative;
     z-index: 15;
   }
 }
-
-
 
 @media (max-width: 768px) {
   #update-table {
@@ -538,7 +535,6 @@ main .main-section .box-content {
   }
 }
 
-
 @media (min-width: 350px) and (max-width: 450px) {
   #update-table {
     padding: 15px;
@@ -546,43 +542,43 @@ main .main-section .box-content {
 
   th,
   td {
-    padding: 8px; 
+    padding: 8px;
   }
 
   td {
-    font-size: 0.9em; 
+    font-size: 0.9em;
   }
-  
+
   #sidebar {
-    display: none; 
+    display: none;
   }
 
   .dashboard-container {
     display: grid;
-    grid-template-columns: 1fr; 
-    margin: 10px 15px; 
-    gap: 8px; 
+    grid-template-columns: 1fr;
+    margin: 10px 15px;
+    gap: 8px;
   }
 
   .dashboard-box {
-    height: 120px; 
+    height: 120px;
     margin: 5px;
-    border-radius: 10px; 
+    border-radius: 10px;
   }
 
   .dashboard-element {
-    padding-left: 10px; 
+    padding-left: 10px;
     padding-right: 10px;
-    line-height: 1.5; 
+    line-height: 1.5;
   }
 
   .sidebar-section {
-    width: 100%; 
-    height: auto; 
+    width: 100%;
+    height: auto;
   }
 
   .sidebar {
-    padding-top: 20px; 
+    padding-top: 20px;
   }
 
   #search {
@@ -591,73 +587,72 @@ main .main-section .box-content {
 
   #show {
     padding: 0px;
-    padding-top: 20px; 
+    padding-top: 20px;
     align-items: center;
   }
 
   #demo {
-    padding: 20px; 
-    padding-top: 30px; 
+    padding: 20px;
+    padding-top: 30px;
     align-items: center;
   }
 
   .search.visible {
-    display: block; 
+    display: block;
   }
-  
+
   .head-section {
     display: block;
     flex-direction: row;
   }
 }
 
-
 @media (max-width: 350px) {
   #sidebar {
-    display: none; 
+    display: none;
   }
 
   .dashboard-container {
     display: grid;
-    grid-template-columns: 1fr; 
-    margin: 5px 10px; 
-    gap: 5px; 
+    grid-template-columns: 1fr;
+    margin: 5px 10px;
+    gap: 5px;
   }
 
   .dashboard-box {
-    height: 100px; 
-    margin: 3px; 
-    border-radius: 8px; 
+    height: 100px;
+    margin: 3px;
+    border-radius: 8px;
   }
 
   .dashboard-element {
-    padding-left: 5px; 
+    padding-left: 5px;
     padding-right: 5px;
-    line-height: 1.4; 
+    line-height: 1.4;
   }
 
   .sidebar-section {
-    width: 100%; 
-    height: auto; 
+    width: 100%;
+    height: auto;
   }
 
   .sidebar {
-    padding-top: 15px; 
+    padding-top: 15px;
   }
 
   #search {
-    display: none; 
+    display: none;
   }
 
   #show {
     padding: 0px;
-    padding-top: 15px; 
+    padding-top: 15px;
     align-items: center;
   }
 
   #demo {
-    padding: 15px; 
-    padding-top: 25px; 
+    padding: 15px;
+    padding-top: 25px;
     align-items: center;
   }
 
@@ -670,7 +665,7 @@ main .main-section .box-content {
   }
 
   table {
-    font-size: 0.8em; 
+    font-size: 0.8em;
   }
 
   .head-section {

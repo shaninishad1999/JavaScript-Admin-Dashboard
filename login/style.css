@@ -31,7 +31,8 @@
   color: white;
 }
 
-input[type=text], select {
+input[type=text],
+select {
   width: 70%;
   padding: 10px 20px;
   margin: 10px 0px 10px 10px;
@@ -52,7 +53,8 @@ i {
   margin-left: -10px;
 }
 
-input[type=password], select {
+input[type=password],
+select {
   width: 70%;
   padding: 10px 20px;
   margin: 10px 0px 10px 10px;
