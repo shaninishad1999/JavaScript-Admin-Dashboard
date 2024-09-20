@@ -141,4 +141,41 @@ select {
 
 .new-user:hover {
   color: red;
+}
+
+/* Media Queries */
+@media (max-width: 350px) {
+  .container {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  input {
+    padding: 10px 30px 10px 10px;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.8em;
+  }
+  .container {
+    padding: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  input {
+    padding: 10px 35px 10px 10px;
+  }
+}
+@media (max-width: 1000px) {
+  .container {
+    max-width: 90%;
+  }
+  h1 {
+    font-size: 2em;
+  }
 }/*# sourceMappingURL=style.css.map */
