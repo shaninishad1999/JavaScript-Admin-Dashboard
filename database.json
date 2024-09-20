@@ -1,15 +1,6 @@
 {
   "employees": [
     {
-      "employeeId": "101",
-      "fullName": "Alice Johnson",
-      "email": "alice.johnson@example.com",
-      "mobileNumber": "9876543210",
-      "officeCode": "A1B2",
-      "jobTitle": "Java Developer",
-      "id": "e893"
-    },
-    {
       "employeeId": "102",
       "fullName": "Bob Smith",
       "email": "bob.smith@example.com",
@@ -62,15 +53,6 @@
       "officeCode": "A1B2",
       "jobTitle": "Java Developer",
       "id": "e899"
-    },
-    {
-      "id": "d6c7",
-      "employeeId": "",
-      "fullName": "",
-      "email": "",
-      "mobileNumber": "",
-      "officeCode": "",
-      "jobTitle": ""
     }
   ]
 }
