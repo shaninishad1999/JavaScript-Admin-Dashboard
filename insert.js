@@ -55,3 +55,16 @@ async function saveData() {
         alert("Error while adding data");  // Show error message
     }
 }
+
+
+function fun() {
+    let sidebar = document.getElementById("sidebar");
+
+
+    if (sidebar.style.display === "none" || sidebar.style.display === "") {
+        sidebar.style.display = "block";  // Show the sidebar
+
+    } else {
+        sidebar.style.display = "none";
+    }
+}

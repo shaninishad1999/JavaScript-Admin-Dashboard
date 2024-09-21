@@ -51,6 +51,14 @@ i {
   cursor: pointer;
 }
 
+span:hover {
+  color: white;
+}
+
+.hov:hover {
+  color: white;
+}
+
 .dropbtn {
   background: transparent;
   color: white;
@@ -310,6 +318,59 @@ main .main-section .box-content > p {
 }
 
 @media (max-width: 1200px) {
+  #form {
+    padding-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92vh;
+    background-color: #f5f5f5;
+    width: 100%;
+  }
+  #form .form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  #form .form-section .form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+  }
+  #form .input-box {
+    margin-bottom: 15px;
+    width: 400px;
+  }
+  #form .input-box label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  #form .input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  #form #form-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  #form #form-btn:hover {
+    background-color: #0056b3;
+  }
   #update-table {
     padding: 15px;
   }
@@ -547,6 +608,17 @@ main .main-section .box-content > p {
   }
 }
 @media (max-width: 350px) {
+  #form {
+    width: 90%; /* Reduce width for smaller screens */
+    height: auto; /* Adjust height for content */
+  }
+  .input-box {
+    width: 100%; /* Make input boxes full width */
+  }
+  #form-btn {
+    font-size: 14px; /* Reduce button font size for smaller screens */
+    padding: 8px; /* Reduce padding for the button */
+  }
   #sidebar {
     display: none;
   }
