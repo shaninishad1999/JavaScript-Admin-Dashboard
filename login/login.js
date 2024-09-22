@@ -11,6 +11,7 @@ function display(e) {
 
     let storedEmail = localStorage.getItem("email");
     let storedPassword = localStorage.getItem("password");
+    let storedName=localStorage.getItem("fname") 
 
     console.log(storedEmail);
     console.log(storedPassword);
@@ -28,7 +29,7 @@ function display(e) {
    
 
     if (email === storedEmail && password === storedPassword) {
-        alert(`Login successful, welcome ${storedEmail}`);
+        alert(`Login successful, welcome ${storedName}`);
         
         localStorage.setItem("userEmail", storedEmail);
         window.location.href = "/index.html";
