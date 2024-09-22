@@ -209,9 +209,10 @@ main .main-section .box-content {
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.dashboard-element p {
-  font-size: 17px;
-  font-weight: 500;
+.dashboard-element #para {
+  margin-top: 10px;
+  // font-size: 17px;
+  font-weight: 800;
   transition: all 0.5s ease-in-out;
   animation: colorChange 3s infinite alternate;
 }

@@ -2,12 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  // color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .reg {
-  background: url("/22.png") no-repeat center/cover;
+  background: url("../assest/background.jpeg") no-repeat center/cover;
   height: 100vh;
   padding: 30px;
 }
@@ -43,7 +42,7 @@ select {
 
 .fname i {
   border: 1px solid#ccc;
-  padding: 14.5px 15px 12px 15px;
+  padding: 11px 15px 12px 15px;
   border-left: none;
   margin-left: -10px;
 }
@@ -61,7 +60,7 @@ select {
 
 .email i {
   border: 1px solid#ccc;
-  padding: 14.5px 15px 12px 15px;
+  padding: 11px 15px 12px 15px;
   border-left: none;
   margin-left: -10px;
 }
@@ -79,7 +78,7 @@ select {
 
 .mobile i {
   border: 1px solid#ccc;
-  padding: 14.5px 15px 12px 15px;
+  padding: 11px 15px 12px 15px;
   border-left: none;
   margin-left: -10px;
 }
@@ -97,7 +96,7 @@ select {
 
 .password i {
   border: 1px solid#ccc;
-  padding: 14.5px 15px 12px 15px;
+  padding: 11px 15px 12px 15px;
   border-left: none;
   margin-left: -10px;
 }

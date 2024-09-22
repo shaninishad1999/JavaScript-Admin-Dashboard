@@ -44,15 +44,6 @@
       "officeCode": "A1B2",
       "jobTitle": "Java Developer",
       "id": "e898"
-    },
-    {
-      "employeeId": "107",
-      "fullName": "George Wilson",
-      "email": "george.wilson@example.com",
-      "mobileNumber": "9876543216",
-      "officeCode": "A1B2",
-      "jobTitle": "Java Developer",
-      "id": "e899"
     }
   ]
 }

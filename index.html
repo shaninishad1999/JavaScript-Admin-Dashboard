@@ -30,7 +30,7 @@
 
             <label for="search" >
 
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
 
             </label>
                 &nbsp;&nbsp;&nbsp;
@@ -43,7 +43,7 @@
                     <button class="dropbtn"> <i class="fa-solid fa-caret-down" onclick="toggleUserInfo()"></i></button>
                     <div id="user-info" style="display: none;">
                         <div class="dropdown-content">
-                            <li id="changeUserId">UserId</li>
+                            <li class="changeUserId">UserId</li>
                             <li>Setting</li>
                             <li onclick="logout()">Logout</li>
                         </div>
@@ -62,7 +62,7 @@
 
         <aside class="sidebar-section" id="sidebar">
 
-            
+
             <div class="sidebar">
 
                 <div class="dashboard hov" onclick="window.location.href='/index.html'" style="cursor: pointer;">
@@ -99,6 +99,17 @@
 
         <!--  dashboard start  -->
         <div id="dashboard">
+            <div class="dashboard-element">
+                <p id="para" >Welcome <span class="changeUser">UserId</span> </p>
+                <p  style="font-size: 20px; padding-bottom: 50px; margin-top: 40px;">An admin responsible for managing employee data oversees the accurate collection, organization, and updating of employee records. <br>
+                    They ensure that sensitive information is securely stored and easily accessible when needed. The admin handles tasks such as maintaining <br> attendance,
+                    
+                    performance reviews,and payroll data. Additionally, they support compliance with HR policies and data privacy regulations.</p>
+                
+                   
+                
+                
+            </div>
             <div class="dashboard-container">
                 <div class="dashboard-box">
                     <div class="dashboard-content">
@@ -130,15 +141,7 @@
                     </div>
                 </div>
             </div>
-            <div class="dashboard-element">
-                <p  style="font-size: 20px;">An admin responsible for managing employee data oversees the accurate collection, organization, and updating of employee records. <br>
-                     They ensure that sensitive information is securely stored and easily accessible when needed. The admin handles tasks such as maintaining <br> attendance,
-                     performance reviews,and payroll data. Additionally, they support compliance with HR policies and data privacy regulations.</p>
-                <p id="para" >Welcome  </p>
-                <!-- <span id="changeUser">UserId</span> -->
-                
-                
-            </div>
+           
 
         </div>
         <!-- dashboard close -->
@@ -155,11 +158,15 @@
     <script>
         window.onload = function () {
             const storedEmail = localStorage.getItem("userEmail");
+            const storedEmail_1 = localStorage.getItem("fname");
            
             if (storedEmail) {
-                const userIdElement = document.getElementById("changeUserId");
+                const userIdElement = document.querySelector(".changeUserId");
+                const userIdElement_1 = document.querySelector(".changeUser");
                 if (userIdElement) {
                     userIdElement.innerHTML = storedEmail;
+                    userIdElement_1.innerHTML=storedEmail_1;
+
 
                 } else {
                     console.error("Element with ID 'changeUserId' not found.");

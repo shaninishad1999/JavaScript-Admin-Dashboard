@@ -7,10 +7,11 @@ function display(e) {
  
     let email = document.getElementById("email").value.trim();
     let password = document.getElementById("password").value.trim();
-
+    
 
     let storedEmail = localStorage.getItem("email");
     let storedPassword = localStorage.getItem("password");
+
     console.log(storedEmail);
     console.log(storedPassword);
 
