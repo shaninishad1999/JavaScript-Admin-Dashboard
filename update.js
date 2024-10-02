@@ -1,13 +1,13 @@
-function editRow(id){
-    document.getElementById(`empid-${id}`).removeAttribute('readonly');
-    document.getElementById(`fullname-${id}`).removeAttribute('readonly');
-    document.getElementById(`email-${id}`).removeAttribute('readonly');
-    document.getElementById(`mobile-${id}`).removeAttribute('readonly');
-    document.getElementById(`officecode-${id}`).removeAttribute('readonly');
-    document.getElementById(`jobtitle-${id}`).removeAttribute('readonly');
-   
-    document.getElementById(`edit-${id}`).style.display="none";
-    document.getElementById(`save-${id}`).style.display="inline";
+function editRow(id) {
+  document.getElementById(`empid-${id}`).removeAttribute('readonly');
+  document.getElementById(`fullname-${id}`).removeAttribute('readonly');
+  document.getElementById(`email-${id}`).removeAttribute('readonly');
+  document.getElementById(`mobile-${id}`).removeAttribute('readonly');
+  document.getElementById(`officecode-${id}`).removeAttribute('readonly');
+  document.getElementById(`jobtitle-${id}`).removeAttribute('readonly');
+
+  document.getElementById(`edit-${id}`).style.display = "none";
+  document.getElementById(`save-${id}`).style.display = "inline";
 }
 
 async function myrecordRemove(id) {
@@ -51,8 +51,8 @@ async function saveRow(id) {
 
     if (response.ok) {
       alert("Record updated successfully");
-      document.getElementById(`edit-${id}`).style.display="inline";
-      document.getElementById(`save-${id}`).style.display="none";
+      document.getElementById(`edit-${id}`).style.display = "inline";
+      document.getElementById(`save-${id}`).style.display = "none";
       document.getElementById(`empid-${id}`).setAttribute('readonly', 'readonly');
       document.getElementById(`fullname-${id}`).setAttribute('readonly', 'readonly');
       document.getElementById(`email-${id}`).setAttribute('readonly', 'readonly');
@@ -67,47 +67,46 @@ async function saveRow(id) {
     alert("An error occurred while updating the record");
   }
 }
-
 async function dataShow() {
-    let mytable = `
-       <table style="width: 100%; border-collapse: collapse; font-size: 20px;  margin-left: auto; margin-right: auto;">
-        <tr>
-             <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Employee ID</th>
-             <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Full Name</th>
-             <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Email</th>
-             <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Mobile Number</th>
-             <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Office Code</th>
-             <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Job Title</th>
-             <th style="border: 1px solid #ddd; padding: 8px; text-align: left; background-color: #f8f9fa; border-left: 2px solid #ddd; border-right: 1px solid #ddd;">Actions</th>
-          </tr>
-      `;
-  
-    // let url = "http://localhost:3000/employees";
-    let url = "https://json-server-deployment-for-employee.onrender.com/employees";
-    let myobj = await fetch(url);
-    let mydata = await myobj.json();
-  
-    mydata.forEach((key) => {
-      mytable += `
-       <tr>
-       <td style="border: 1px solid #ddd; padding: 8px;"><input type="text" value="${key.employeeId}" id="empid-${key.id}" readonly style="border: none; width: 100%;"></td>
-       <td style="border: 1px solid #ddd; padding: 8px;"><input type="text" value="${key.fullName}" id="fullname-${key.id}" readonly style="border: none; width: 100%;"></td>
-       <td style="border: 1px solid #ddd; padding: 8px;"><input type="text" value="${key.email}" id="email-${key.id}" readonly style="border: none; width: 100%;"></td>
-       <td style="border: 1px solid #ddd; padding: 8px;"><input type="text" value="${key.mobileNumber}" id="mobile-${key.id}" readonly style="border: none; width: 100%;"></td>
-       <td style="border: 1px solid #ddd; padding: 8px;"><input type="text" value="${key.officeCode}" id="officecode-${key.id}" readonly style="border: none; width: 100%;"></td>
-       <td style="border: 1px solid #ddd; padding: 8px;"><input type="text" value="${key.jobTitle}" id="jobtitle-${key.id}" readonly style="border: none; width: 100%;"></td>
-       <td style="border: 1px solid #ddd; padding: 8px; background-color: #f8f9fa; border-left: 2px solid #ddd;">
-         <a href="#" onclick="myrecordRemove('${key.id}')" class="button button-delete" style="background-color: red; color: white; padding: 5px 10px; text-decoration: none; border-radius: 3px;">Delete</a>
-         <a href="#" onclick="editRow('${key.id}')" id="edit-${key.id}" class="button button-edit" style="background-color: #007bff; color: white; padding: 5px 10px; text-decoration: none; border-radius: 3px; margin-left: 5px;">Edit</a>
-         <a href="#" onclick="saveRow('${key.id}')" id="save-${key.id}" class="button button-save" style="background-color: #28a745; color: white; padding: 5px 10px; text-decoration: none; border-radius: 3px; display: none; margin-left: 5px;">Save</a>
-       </td>
-       </tr>
-      `;
-    });
-  
-    mytable += `</table>`;
-    document.getElementById("updateTable").innerHTML = mytable;
+  let mytable = `
+     <table style="width: 100%; border-collapse: collapse; font-size: 20px; margin: auto;">
+      <tr>
+           <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Employee ID</th>
+           <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Full Name</th>
+           <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Email</th>
+           <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Mobile Number</th>
+           <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Office Code</th>
+           <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Job Title</th>
+           <th style="border: 1px solid #ddd; padding: 8px; text-align: left; background-color: #f8f9fa;">Actions</th>
+        </tr>
+    `;
+
+  let url = "https://json-server-deployment-for-employee.onrender.com/employees";
+  let myobj = await fetch(url);
+  let mydata = await myobj.json();
+
+  mydata.forEach((employee) => {
+    mytable += `
+     <tr>
+     <td style="border: 1px solid #ddd; padding: 8px;"><input type="text" value="${employee.employeeId}" id="empid-${employee.id}" readonly></td>
+     <td style="border: 1px solid #ddd; padding: 8px;"><input type="text" value="${employee.fullName}" id="fullname-${employee.id}" readonly></td>
+     <td style="border: 1px solid #ddd; padding: 8px;"><input type="text" value="${employee.email}" id="email-${employee.id}" readonly></td>
+     <td style="border: 1px solid #ddd; padding: 8px;"><input type="text" value="${employee.mobileNumber}" id="mobile-${employee.id}" readonly></td>
+     <td style="border: 1px solid #ddd; padding: 8px;"><input type="text" value="${employee.officeCode}" id="officecode-${employee.id}" readonly></td>
+     <td style="border: 1px solid #ddd; padding: 8px;"><input type="text" value="${employee.jobTitle}" id="jobtitle-${employee.id}" readonly></td>
+     <td style="border: 1px solid #ddd; padding: 8px; background-color: #f8f9fa;">
+       <button onclick="myrecordRemove('${employee.id}')" style="background-color: red; color: white;">Delete</button>
+       <button onclick="editRow('${employee.id}')" id="edit-${employee.id}" style="background-color: #007bff; color: white;">Edit</button>
+       <button onclick="saveRow('${employee.id}')" id="save-${employee.id}" style="background-color: #28a745; display: none;">Save</button>
+     </td>
+     </tr>
+    `;
+  });
+
+  mytable += `</table>`;
+  document.getElementById("updateTable").innerHTML = mytable;
 }
+
 
 dataShow();
 
