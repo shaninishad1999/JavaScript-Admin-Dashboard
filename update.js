@@ -1,13 +1,13 @@
-function editRow(id) {
-  document.getElementById(`empid-${id}`).removeAttribute('readonly');
-  document.getElementById(`fullname-${id}`).removeAttribute('readonly');
-  document.getElementById(`email-${id}`).removeAttribute('readonly');
-  document.getElementById(`mobile-${id}`).removeAttribute('readonly');
-  document.getElementById(`officecode-${id}`).removeAttribute('readonly');
-  document.getElementById(`jobtitle-${id}`).removeAttribute('readonly');
-
-  document.getElementById(`edit-${id}`).style.display = "none";
-  document.getElementById(`save-${id}`).style.display = "inline";
+function editRow(id){
+    document.getElementById(`empid-${id}`).removeAttribute('readonly');
+    document.getElementById(`fullname-${id}`).removeAttribute('readonly');
+    document.getElementById(`email-${id}`).removeAttribute('readonly');
+    document.getElementById(`mobile-${id}`).removeAttribute('readonly');
+    document.getElementById(`officecode-${id}`).removeAttribute('readonly');
+    document.getElementById(`jobtitle-${id}`).removeAttribute('readonly');
+   
+    document.getElementById(`edit-${id}`).style.display="none";
+    document.getElementById(`save-${id}`).style.display="inline";
 }
 
 async function myrecordRemove(id) {
@@ -51,8 +51,8 @@ async function saveRow(id) {
 
     if (response.ok) {
       alert("Record updated successfully");
-      document.getElementById(`edit-${id}`).style.display = "inline";
-      document.getElementById(`save-${id}`).style.display = "none";
+      document.getElementById(`edit-${id}`).style.display="inline";
+      document.getElementById(`save-${id}`).style.display="none";
       document.getElementById(`empid-${id}`).setAttribute('readonly', 'readonly');
       document.getElementById(`fullname-${id}`).setAttribute('readonly', 'readonly');
       document.getElementById(`email-${id}`).setAttribute('readonly', 'readonly');
@@ -88,16 +88,16 @@ async function dataShow() {
   mydata.forEach((employee) => {
     mytable += `
      <tr>
-     <td style="border: 1px solid #ddd; padding: 8px;"><input type="text" value="${employee.employeeId}" id="empid-${employee.id}" readonly></td>
-     <td style="border: 1px solid #ddd; padding: 8px;"><input type="text" value="${employee.fullName}" id="fullname-${employee.id}" readonly></td>
-     <td style="border: 1px solid #ddd; padding: 8px;"><input type="text" value="${employee.email}" id="email-${employee.id}" readonly></td>
-     <td style="border: 1px solid #ddd; padding: 8px;"><input type="text" value="${employee.mobileNumber}" id="mobile-${employee.id}" readonly></td>
-     <td style="border: 1px solid #ddd; padding: 8px;"><input type="text" value="${employee.officeCode}" id="officecode-${employee.id}" readonly></td>
-     <td style="border: 1px solid #ddd; padding: 8px;"><input type="text" value="${employee.jobTitle}" id="jobtitle-${employee.id}" readonly></td>
+     <td style="border: 1px solid #ddd; padding: 8px;"><input type="text" value="${employee.employeeId}" id="empid-${employee.id}" style="border: none; padding: 5px;" readonly></td>
+     <td style="border: 1px solid #ddd; padding: 8px;"><input type="text" value="${employee.fullName}" id="fullname-${employee.id}" style="border: none; padding: 5px;" readonly></td>
+     <td style="border: 1px solid #ddd; padding: 8px;"><input type="text" value="${employee.email}" id="email-${employee.id}" style="border: none; padding: 5px;" readonly></td>
+     <td style="border: 1px solid #ddd; padding: 8px;"><input type="text" value="${employee.mobileNumber}" id="mobile-${employee.id}" style="border: none; padding: 5px;" readonly></td>
+     <td style="border: 1px solid #ddd; padding: 8px;"><input type="text" value="${employee.officeCode}" id="officecode-${employee.id}" style="border: none; padding: 5px;" readonly></td>
+     <td style="border: 1px solid #ddd; padding: 8px;"><input type="text" value="${employee.jobTitle}" id="jobtitle-${employee.id}" style="border: none; padding: 5px;" readonly></td>
      <td style="border: 1px solid #ddd; padding: 8px; background-color: #f8f9fa;">
-       <button onclick="myrecordRemove('${employee.id}')" style="background-color: red; color: white;">Delete</button>
-       <button onclick="editRow('${employee.id}')" id="edit-${employee.id}" style="background-color: #007bff; color: white;">Edit</button>
-       <button onclick="saveRow('${employee.id}')" id="save-${employee.id}" style="background-color: #28a745; display: none;">Save</button>
+       <button onclick="myrecordRemove('${employee.id}')" style="background-color: red; color: white; padding: 5px 10px; border: none; border-radius: 5px; cursor: pointer;">Delete</button>
+       <button onclick="editRow('${employee.id}')" id="edit-${employee.id}" style="background-color: #007bff; color: white; padding: 5px 10px; border: none; border-radius: 5px; cursor: pointer;">Edit</button>
+       <button onclick="saveRow('${employee.id}')" id="save-${employee.id}" style="background-color: #28a745; color: white; padding: 5px 10px; border: none; border-radius: 5px; display: none; cursor: pointer;">Save</button>
      </td>
      </tr>
     `;
@@ -107,6 +107,4 @@ async function dataShow() {
   document.getElementById("updateTable").innerHTML = mytable;
 }
 
-
 dataShow();
-
