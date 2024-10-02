@@ -11,7 +11,8 @@ function editRow(id){
 }
 
 async function myrecordRemove(id) {
-  let url = `http://localhost:3000/employees/${id}`;
+  // let url = `http://localhost:3000/employees/${id}`;
+  let url = `https://json-server-deployment-for-employee.onrender.com/employees/${id}`;
 
   try {
     let response = await fetch(url, { method: "DELETE" });
@@ -28,7 +29,8 @@ async function myrecordRemove(id) {
 }
 
 async function saveRow(id) {
-  let url = `http://localhost:3000/employees/${id}`;
+  // let url = `http://localhost:3000/employees/${id}`;
+  let url = `https://json-server-deployment-for-employee.onrender.com/employees/${id}`;
   let updatedEmployee = {
     employeeId: document.getElementById(`empid-${id}`).value,
     fullName: document.getElementById(`fullname-${id}`).value,
@@ -80,7 +82,8 @@ async function dataShow() {
           </tr>
       `;
   
-    let url = "http://localhost:3000/employees";
+    // let url = "http://localhost:3000/employees";
+    let url = "https://json-server-deployment-for-employee.onrender.com/employees";
     let myobj = await fetch(url);
     let mydata = await myobj.json();
   

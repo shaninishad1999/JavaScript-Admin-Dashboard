@@ -1,15 +1,6 @@
 {
   "employees": [
     {
-      "employeeId": "102",
-      "fullName": "Bob Smith",
-      "email": "bob.smith@example.com",
-      "mobileNumber": "9876543211",
-      "officeCode": "A1B2",
-      "jobTitle": "Java Developer",
-      "id": "e894"
-    },
-    {
       "employeeId": "103",
       "fullName": "Charlie Davis",
       "email": "charlie.davis@example.com",
@@ -17,15 +8,6 @@
       "officeCode": "A1B2",
       "jobTitle": "Java Developer",
       "id": "e895"
-    },
-    {
-      "employeeId": "104",
-      "fullName": "Diana Miller",
-      "email": "diana.miller@example.com",
-      "mobileNumber": "9876543213",
-      "officeCode": "A1B2",
-      "jobTitle": "Java Developer",
-      "id": "e896"
     },
     {
       "employeeId": "105",
@@ -41,9 +23,27 @@
       "fullName": "Fiona Brown",
       "email": "fiona.brown@example.com",
       "mobileNumber": "9876543215",
-      "officeCode": "A1B2",
+      "officeCode": "A1B3",
       "jobTitle": "Java Developer",
       "id": "e898"
+    },
+    {
+      "employeeId": "110",
+      "fullName": "Shanideval",
+      "email": "admin@gmail.com",
+      "mobileNumber": "6386397325",
+      "officeCode": "Ab123",
+      "jobTitle": "Mern developer",
+      "id": "5787"
+    },
+    {
+      "id": "ee44",
+      "employeeId": "101",
+      "fullName": "Shanideval",
+      "email": "shani@gmail.com",
+      "mobileNumber": "8965748563",
+      "officeCode": "df",
+      "jobTitle": "vxvx"
     }
   ]
 }

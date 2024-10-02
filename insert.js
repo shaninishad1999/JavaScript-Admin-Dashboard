@@ -20,7 +20,8 @@ async function saveData() {
         let employeeJobTitle = document.getElementById("jobTitle").value;
 
 
-        let url = 'http://localhost:3000/employees';
+        // let url = 'http://localhost:3000/employees';
+        let url = 'https://json-server-deployment-for-employee.onrender.com/employees';
 
 
         let response = await fetch(url, {
