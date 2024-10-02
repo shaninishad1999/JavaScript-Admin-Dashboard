@@ -46,13 +46,7 @@ async function saveData() {
 
 
             alert("Data successfully added");
-             // Clear form inputs after successful submission
-             document.getElementById("id").value = "";
-             document.getElementById("fullName").value = "";
-             document.getElementById("email").value = "";
-             document.getElementById("mobileNumber").value = "";
-             document.getElementById("officeCode").value = "";
-             document.getElementById("jobTitle").value = "";
+            window.location.reload();  // This will reload the entire page
 
         } else {
             throw new Error('Failed to add data');
