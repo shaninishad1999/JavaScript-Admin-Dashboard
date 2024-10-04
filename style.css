@@ -204,7 +204,6 @@ main .main-section .box-content > p {
 }
 
 .dashboard-element #para {
-  margin-top: 10px;
   font-weight: 800;
   transition: all 0.5s ease-in-out;
   animation: colorChange 3s infinite alternate;
