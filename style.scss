@@ -892,6 +892,65 @@ main .main-section .box-content {
     display: block;
     flex-direction: row;
   }
+  #form {
+    padding-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92vh;
+    background-color: #f5f5f5;
+    width: 100%;
+    .form-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      .form {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+      }
+    }
+
+    .input-box {
+      margin-bottom: 15px;
+      width: 200px;
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+    }
+
+    #form-btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
 }
 
 
@@ -928,5 +987,64 @@ main .main-section .box-content {
   
   td button:first-child {
     margin-left: auto; 
+  }
+  #form {
+    padding-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92vh;
+    background-color: #f5f5f5;
+    width: 100%;
+    .form-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      .form {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+      }
+    }
+
+    .input-box {
+      margin-bottom: 15px;
+      width: 200px;
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+    }
+
+    #form-btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
   }
 }
