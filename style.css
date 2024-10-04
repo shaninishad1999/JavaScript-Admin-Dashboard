@@ -224,6 +224,7 @@ main .main-section .box-content > p {
 #user-info {
   position: absolute;
   width: 200px;
+  margin-top: 3px;
   background-color: black;
   right: 0;
 }
