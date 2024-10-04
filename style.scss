@@ -2,14 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family:  "Arial Narrow", Arial, sans-serif;
 
 }
 
 .navbar {
   height: 60px;
-  // background-color: #212529;
-  background-color: #711000;
+  background-color: #2c3e50; 
+    color: white; 
   display: flex;
   align-items: center;
   color: white;
@@ -61,10 +61,11 @@ i {
   cursor: pointer;
 }
 span:hover{
-  color: white;
+  color: rgb(210, 37, 37);
 }
 .hov:hover{
-  color: white;
+  background-color: #2c3e50; /* Darker blue/gray when hovered */
+  color: #ecf0f1; /* Light gray text color for better contrast */
 }
 .changeUser:hover{
   color: #0056b3;
@@ -112,8 +113,8 @@ span:hover{
 .sidebar-section {
   width: 220px;
   height: 92vh;
-  // background-color: #1180f0;
-  background-color: #e48b88;
+  background-color: #34495e; /* Slightly lighter blue/gray for sidebar */
+  color: white; /* White text color */
   padding-left: 20px;
   position: relative;
   z-index: 1;
@@ -491,18 +492,207 @@ main .main-section .box-content {
   }
 }
 
-@media (max-width: 768px) {
-  #update-table {
-    padding: 20px;
-  }
-
+@media (max-width: 900px) {
   table {
-    font-size: 0.95em;
+    font-size: 0.8em; /* Reduce font size */
   }
 
-  th,
+  th, td {
+    padding: 5px; /* Reduce padding */
+  }
+
   td {
-    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* Place data on the left and buttons on the right */
+    align-items: center;
+  }
+
+  td input {
+    width: 70%; /* Make inputs take 70% of the width */
+  }
+
+  td button {
+    margin-left: 5px; /* Add some space between buttons */
+  }
+
+  button {
+    font-size: 12px; /* Smaller buttons */
+    padding: 5px 8px;
+  }
+
+  /* Align 'Delete' button on the right side */
+  td button:first-child {
+    margin-left: auto; /* Move the 'Delete' button to the right */
+  }
+  table {
+    font-size: 0.8em; /* Reduce font size */
+  }
+
+  th, td {
+    padding: 5px; /* Reduce padding */
+  }
+
+  td {
+    display: flex;
+    justify-content: space-between; /* Place data on the left and buttons on the right */
+    align-items: center;
+  }
+
+  td input {
+    width: 70%; /* Make inputs take 70% of the width */
+  }
+
+  td button {
+    margin-left: 5px; /* Add some space between buttons */
+  }
+
+  button {
+    font-size: 12px; /* Smaller buttons */
+    padding: 5px 8px;
+  }
+
+  /* Align 'Delete' button on the right side */
+  td button:first-child {
+    margin-left: auto; /* Move the 'Delete' button to the right */
+  }
+  #sidebar {
+    display: none;
+  }
+  .dashboard-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px 30px;
+    gap: 10px;
+  }
+  .dashboard-box {
+    height: 150px;
+    width: 100%;
+    margin: 5px;
+    border-radius: 15px;
+  }
+  .dashboard-element {
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 2;
+  }
+  #sidebar {
+    display: flex;
+    flex-direction: row;
+  }
+  #search {
+    display: none;
+  }
+  .fa-magnifying-glass {
+    display: none;
+  }
+  .sidebar-section {
+    position: absolute;
+    z-index: 15;
+    width: 200px;
+    height: 92vh;
+    background-color: #1180f0;
+    padding-left: 20px;
+    // position: relative;
+
+    a {
+      text-decoration: none;
+
+      color: white;
+      font-size: 20px;
+    }
+  }
+  .sidebar {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    line-height: 3;
+    position: relative;
+    z-index: 15;
+  }
+  #search {
+    display: none;
+  }
+  #show {
+    padding: 0px;
+    padding-top: 50px;
+    align-items: center;
+  }
+  #demo {
+    padding: 40px;
+    padding-top: 50px;
+    align-items: center;
+  }
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  th {
+    display: none; /* Hide headers */
+  }
+
+  tr {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+  }
+
+  td {
+    text-align: right;
+    position: relative;
+    padding-left: 50%;
+    font-size: 0.9em; /* Adjust text size */
+  }
+
+  td::before {
+    content: attr(data-label); /* Use data-label for responsive display */
+    position: absolute;
+    left: 10px;
+    width: 50%;
+    padding-left: 10px;
+    text-align: left;
+    font-weight: bold;
+  }
+  .head-section {
+    display: block;
+    flex-direction: row;
+  }
+}
+@media (max-width: 768px) {
+  table {
+    font-size: 0.8em; /* Reduce font size */
+  }
+
+  th, td {
+    padding: 5px; /* Reduce padding */
+  }
+
+  td {
+    display: flex;
+    justify-content: space-between; /* Place data on the left and buttons on the right */
+    align-items: center;
+  }
+
+  td input {
+    width: 70%; /* Make inputs take 70% of the width */
+  }
+
+  td button {
+    margin-left: 5px; /* Add some space between buttons */
+  }
+
+  button {
+    font-size: 12px; /* Smaller buttons */
+    padding: 5px 8px;
+  }
+
+  /* Align 'Delete' button on the right side */
+  td button:first-child {
+    margin-left: auto; /* Move the 'Delete' button to the right */
   }
   #sidebar {
     display: none;
@@ -612,19 +802,38 @@ main .main-section .box-content {
   }
 }
 
-@media (min-width: 350px) and (max-width: 450px) {
+@media (min-width: 351px) and (max-width: 450px) {
   
-  #update-table {
-    padding: 15px;
+  table {
+    font-size: 0.8em; /* Reduce font size */
   }
 
-  th,
-  td {
-    padding: 8px;
+  th, td {
+    padding: 5px; /* Reduce padding */
   }
 
   td {
-    font-size: 0.9em;
+    display: flex;
+    justify-content: space-between; /* Place data on the left and buttons on the right */
+    align-items: center;
+  }
+
+  td input {
+    width: 70%; /* Make inputs take 70% of the width */
+  }
+
+  td button {
+    margin-left: 5px; /* Add some space between buttons */
+  }
+
+  button {
+    font-size: 12px; /* Smaller buttons */
+    padding: 5px 8px;
+  }
+
+  /* Align 'Delete' button on the right side */
+  td button:first-child {
+    margin-left: auto; /* Move the 'Delete' button to the right */
   }
 
   #sidebar {
@@ -685,82 +894,39 @@ main .main-section .box-content {
   }
 }
 
+
+
+/* Media query for 350px screens */
 @media (max-width: 350px) {
-  #form {
-    width: 90%; /* Reduce width for smaller screens */
-    height: auto; /* Adjust height for content */
-  }
-
-  .input-box {
-    width: 100%; /* Make input boxes full width */
-  }
-
-  #form-btn {
-    font-size: 14px; /* Reduce button font size for smaller screens */
-    padding: 8px; /* Reduce padding for the button */
-  }
-  #sidebar {
-    display: none;
-  }
-
-  .dashboard-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 5px 10px;
-    gap: 5px;
-  }
-
-  .dashboard-box {
-    height: 100px;
-    margin: 3px;
-    border-radius: 8px;
-  }
-
-  .dashboard-element {
-    padding-left: 5px;
-    padding-right: 5px;
-    line-height: 1.4;
-  }
-
-  .sidebar-section {
-    width: 100%;
-    height: auto;
-  }
-
-  .sidebar {
-    padding-top: 15px;
-  }
-
-  #search {
-    display: none;
-  }
-
-  #show {
-    padding: 0px;
-    padding-top: 15px;
-    align-items: center;
-  }
-
-  #demo {
-    padding: 15px;
-    padding-top: 25px;
-    align-items: center;
-  }
-
-  .fa-magnifying-glass {
-    display: none;
-  }
-
-  #update-table {
-    padding: 10px;
-  }
-
   table {
-    font-size: 0.8em;
+    font-size: 0.8em; 
   }
 
-  .head-section {
-    display: block;
-    flex-direction: row;
+  th, td {
+    padding: 5px; 
+  }
+
+  td {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+  }
+
+  td input {
+    width: 70%; 
+  }
+
+  td button {
+    margin-left: 5px; 
+  }
+
+  button {
+    font-size: 12px; 
+    padding: 5px 8px;
+  }
+
+  
+  td button:first-child {
+    margin-left: auto; 
   }
 }

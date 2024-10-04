@@ -2,17 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Arial Narrow", Arial, sans-serif;
 }
 
 .reg {
-  background: url("../assest/background.jpeg") no-repeat center/cover;
+  // background: url("../assest/background.jpg") no-repeat center center/cover;
+  background: url("../assest/logo.jpg") no-repeat center center/cover;
   height: 100vh;
   padding: 30px;
 }
 i {
-  color: red;
+  color: white;
 }
+
 .container {
   width: 400px;
   height: 580px;
@@ -121,23 +123,23 @@ select {
 }
 
 .form-btn button:hover {
-  background-color: red;
+  background-color: rgb(185, 183, 183);
   color: white;
 }
 #btn {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 300;
 }
 
 // close  form
 .new-user {
-  font-weight: bold;
+  // font-weight: bold;
   color: white;
   line-height: 2;
   font-size: 20px;
 }
 .new-user:hover {
-  color: red;
+  color: rgb(185, 183, 183);
 }
 
 /* Media Queries */

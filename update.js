@@ -18,7 +18,9 @@ async function myrecordRemove(id) {
     let response = await fetch(url, { method: "DELETE" });
     if (response.ok) {
       alert("Record deleted successfully");
-      dataShow(); // Refresh the table
+
+      // Remove the specific row from the table
+      document.getElementById(`row-${id}`).remove();
     } else {
       alert("Failed to delete record");
     }
@@ -27,6 +29,7 @@ async function myrecordRemove(id) {
     alert("An error occurred while deleting the record");
   }
 }
+
 
 async function saveRow(id) {
   // let url = `http://localhost:3000/employees/${id}`;
@@ -87,7 +90,7 @@ async function dataShow() {
 
   mydata.forEach((employee) => {
     mytable += `
-     <tr>
+     <tr id="row-${employee.id}">
      <td style="border: 1px solid #ddd; padding: 8px;"><input type="text" value="${employee.employeeId}" id="empid-${employee.id}" style="border: none; padding: 5px;" readonly></td>
      <td style="border: 1px solid #ddd; padding: 8px;"><input type="text" value="${employee.fullName}" id="fullname-${employee.id}" style="border: none; padding: 5px;" readonly></td>
      <td style="border: 1px solid #ddd; padding: 8px;"><input type="text" value="${employee.email}" id="email-${employee.id}" style="border: none; padding: 5px;" readonly></td>
@@ -106,5 +109,6 @@ async function dataShow() {
   mytable += `</table>`;
   document.getElementById("updateTable").innerHTML = mytable;
 }
+
 
 dataShow();
